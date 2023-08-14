@@ -1,7 +1,7 @@
-0. 启动服务 
+0. 启动服务 https://github.com/avairain/originServer
 
 1. yarn install
 
 2. yarn start
 
-3. 
+3. 替换url
