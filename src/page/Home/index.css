@@ -1,0 +1,13 @@
+.home-item {
+  width: 150px;
+  height: 300px;
+  margin: 200px auto 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 300px;
+}
+.home-item-button {
+  text-align: center;
+  margin-top: 20px;
+}
