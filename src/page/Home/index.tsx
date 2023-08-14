@@ -44,17 +44,17 @@ const Home: FunctionComponent<HomeProps> = () => {
   return (
     <>
       <div className="home-item">
-        {(!isEdit && !isAdmin) ? <span onDoubleClick={() => {
+        {(isEdit && isAdmin) ? <Form onFinish={onFinish} initialValues={currentInfo}>
+          <Item name="info" label="info">
+            <Input />
+          </Item>
+          <Button htmlType="submit" type="primary">提交</Button>
+        </Form> : <span onDoubleClick={() => {
           setIsEdit(true)
         }}>
           {currentInfo.info}
-        </span> : <Form onFinish={onFinish} initialValues={currentInfo}>
-        <Item name="info" label="info">
-          <Input />
-        </Item>
-        <Button htmlType="submit" type="primary">提交</Button>
-      </Form>}
-        
+        </span>}
+
       </div>
       <div className="home-item-button">
         {isAdmin && (

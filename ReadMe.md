@@ -4,4 +4,4 @@
 
 2. yarn start
 
-3. 替换url
+3. 替换APIurl src/service/index.ts
