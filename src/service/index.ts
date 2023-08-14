@@ -3,7 +3,7 @@ import axios from 'axios';
 interface SubmitUserParams { user: string }
 interface SubmitUserResponse { isAdmin: boolean }
 
-const url = 'https://fuzzy-computing-machine-vp9q57vvqgj26q4j-6060.app.github.dev'
+const url = 'http://127.0.0.1:6060'
 
 export const submitUser = (params: SubmitUserParams) =>
   axios.post<SubmitUserResponse>(`${url}/simple/login`, params);
